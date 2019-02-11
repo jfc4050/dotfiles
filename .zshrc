@@ -75,6 +75,7 @@ function gas() {
 # env
 export PATH="${PATH}:/usr/local/cuda/bin"
 export LD_LIBRARY_PATH="${LD_LIBRARY_PATH}:/usr/local/cuda/lib64"
+export CONDA_PREFIX="${HOME}/anaconda3"
 
 # vim mode
 bindkey -v
@@ -90,18 +91,19 @@ function zle-line-init zle-keymap-select () {
 }
 zle -N zle-line-init
 zle -N zle-keymap-select
+
 # ignore ^c, ^q
 stty -ixon
 
 # <<< conda init <<<
-# added by Anaconda3 5.3.1 installer
 # >>> conda init >>>
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$(CONDA_REPORT_ERRORS=false '${CONDA_PREFIX}/bin/conda' shell.bash hook 2> /dev/null)"
 if [ $? -eq 0 ]; then
     \eval "$__conda_setup"
 else
-    if [ -f "$CONDA_PREFIX/etc/profile.d/conda.sh" ]; then
+    if [ -f "$CONDA_PREFIX/etc/profile.d/conda.sh" ]
+    then
         . "$CONDA_PREFIX/etc/profile.d/conda.sh"
         CONDA_CHANGEPS1=false conda activate base
     else
