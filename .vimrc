@@ -40,8 +40,13 @@ set expandtab
 set smarttab
 
 " change cursor based on mode
-let &t_SI.="\e[5 q"
-let &t_SR.="\e[4 q"
-let &t_EI.="\e[1 q"
+let &t_SI.="\e[5 q"  " blinking bar
+let &t_SR.="\e[3 q"  " blinking underline
+let &t_EI.="\e[1 q"  " blinking block
+
+augroup myCmds
+au!
+autocmd VimEnter * silent !echo -ne "\e[1 q"
+augroup END
 
 :imap jk <Esc>
