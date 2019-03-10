@@ -1,10 +1,5 @@
 #! /bin/sh
 
-CFGDIR=$HOME/.config
-
-
-bspc monitor -d I II III IV V VI VII VIII IX X
-
 bspc config border_width         0
 bspc config window_gap           15
 bspc config top_padding          0
@@ -20,16 +15,35 @@ bspc rule -a mplayer2 state=floating
 bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
 
+# machine-specific monitor/keyboard options
+case $(cat /var/lib/dbus/machine-id) in
+    65b40d91790249efbc3a35a1ca2a33b3)  # home
+        xrandr --output DP-4 --mode 3440x1440 --rate 144
+        bspc monitor -d 1 2 3 4 5 6 7 8 9
+        ;;
+    ed0adf4708574812a27a4a6930a9acc6)  # work
+        bspc monitor DP-1-1-1 -d 1 2 3
+        bspc monitor DP-1-1-2 -d 4 5 6
+        bspc monitor eDP-1-1 -d 7 8 9
+        xrandr --output eDP-1-1 --mode 1920x1080
+        xrandr --output DP-1-1-2 --above eDP-1-1
+        xrandr --output DP-1-1-1 --left-of DP-1-1-2
+        setxkbmap -layout us -option ctrl:nocaps
+        setxkbmap -layout us -option altwin:swap_alt_win
+        ;;
+    *)
+        bspc monitor -d I II III IV V VI VII VIII IX X
+        ;;
+esac
 
-
-for PROCESS in sxhkd compton albert polybar
+for PROCESS in sxhkd compton polybar
 do
     pkill $PROCESS
 done
 
 feh --bg-center /home/justin/Wallpapers/small-memory-lp.jpg
 
+CFGDIR=$HOME/.config
 sxhkd &
 compton --config $CFGDIR/compton/compton.conf -b
-albert &
 # polybar -c $CFGDIR/polybar/gamehelp16_config top &
