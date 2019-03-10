@@ -46,4 +46,5 @@ feh --bg-center /home/justin/Wallpapers/small-memory-lp.jpg
 CFGDIR=$HOME/.config
 sxhkd &
 compton --config $CFGDIR/compton/compton.conf -b
-# polybar -c $CFGDIR/polybar/gamehelp16_config top &
+polybar -c $CFGDIR/polybar/gamehelp16_config top &
+sleep 0.5 && xdo hide -N Polybar && bspc config top_padding 0
