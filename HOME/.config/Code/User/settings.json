@@ -12,5 +12,13 @@
     "vim.useSystemClipboard": true,
     "editor.renderWhitespace": "all",
     "editor.minimap.enabled": false,
-    "editor.rulers": [88]
+    "editor.rulers": [
+        88
+    ],
+    "files.exclude": {
+        ".pytest_cache/": true,
+        ".vscode/": true,
+        "**/__pycache__/": true
+    },
+    "gitlens.codeLens.enabled": false
 }
