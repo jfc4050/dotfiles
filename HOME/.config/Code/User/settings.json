@@ -6,6 +6,7 @@
         }
     ],
     "vim.handleKeys": {
+        "<C-b>": false,
         "<C-w>": false
     },
     "vim.useSystemClipboard": true,
