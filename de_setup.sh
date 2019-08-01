@@ -1,4 +1,6 @@
-#!/usr/bin/env bash
+#!/bin/bash
+
+set -e
 
 for dfile_srcpath in $(find HOME -type f)
 do
@@ -9,12 +11,6 @@ do
     fi
 
     dfile_dstpath=$(echo $dfile_srcpath | sed "s|HOME|$HOME|")
-    if [[ -f $dfile_dstpath  ]]
-    then
-        echo "$dfile_dstpath exists. skipping"
-    else
-        echo "linking $dfile_dstpath"
-        mkdir -p $(dirname $dfile_dstpath)
-        ln -s $(pwd)/$dfile_srcpath $dfile_dstpath
-    fi
+    mkdir -p $(dirname $dfile_dstpath)
+    ln -sb $(pwd)/$dfile_srcpath $dfile_dstpath
 done
