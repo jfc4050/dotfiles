@@ -1,11 +1,15 @@
 [
     {
         "key": "alt+h",
-        "command": "workbench.action.focusLeftGroup"
+        "command": "workbench.action.focusPreviousGroup"
     },
     {
         "key": "alt+j",
         "command": "workbench.action.previousEditor"
+    },
+    {
+        "key": "shift+alt+h",
+        "command": "workbench.action.moveEditorToPreviousGroup"
     },
     {
         "key": "alt+k",
@@ -13,7 +17,11 @@
     },
     {
         "key": "alt+l",
-        "command": "workbench.action.focusRightGroup"
+        "command": "workbench.action.focusNextGroup"
+    },
+    {
+        "key": "shift+alt+l",
+        "command": "workbench.action.moveEditorToNextGroup"
     },
     {
         "key": "ctrl+k",
