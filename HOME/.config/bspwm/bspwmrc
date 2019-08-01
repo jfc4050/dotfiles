@@ -43,7 +43,7 @@ do
     pkill $PROCESS
 done
 
-feh --bg-center /home/justin/Wallpapers/small-memory-lp.jpg
+feh --bg-center ~/Wallpapers/wallpaper.jpg
 
 CFGDIR=$HOME/.config
 sxhkd &
