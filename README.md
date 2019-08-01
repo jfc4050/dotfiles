@@ -26,6 +26,7 @@ First install:
 * compton (tryone144 fork)
 * ulauncher
 * terminator
+* vscode
 
 Then to symlink config files:
 
