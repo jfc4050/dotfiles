@@ -21,5 +21,6 @@
         "**/__pycache__/": true
     },
     "gitlens.codeLens.enabled": false,
-    "workbench.editor.enablePreview": false
+    "workbench.editor.enablePreview": false,
+    "editor.fontFamily": "'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback', 'PowerlineSymbols'"
 }
