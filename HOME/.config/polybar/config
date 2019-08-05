@@ -9,7 +9,7 @@ alert = #bd2c40
 
 
 [bar/example]
-;monitor = ${env:MONITOR:HDMI-1}
+monitor = ${env:MONITOR:}
 width = 100%
 height = 20
 fixed-center = true
@@ -53,18 +53,18 @@ cursor-scroll = ns-resize
 [module/bspwm]
 type = internal/bspwm
 
-label-focused = %index%
+label-focused = %name%
 label-focused-background = ${colors.background-alt}
 label-focused-padding = 2
 
-label-occupied = %index%
+label-occupied = %name%
 label-occupied-padding = 2
 
-label-urgent = %index%!
+label-urgent = %name%!
 label-urgent-background = ${colors.alert}
 label-urgent-padding = 2
 
-label-empty = %index%
+label-empty = %name%
 label-empty-foreground = ${colors.foreground-alt}
 label-empty-padding = 2
 

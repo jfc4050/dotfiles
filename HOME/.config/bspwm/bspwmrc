@@ -50,7 +50,11 @@ done
 
 feh --bg-scale ~/Wallpapers/wallpaper.jpg
 
-CFGDIR=$HOME/.config
+CFGDIR=~/.config
 sxhkd &
 compton --config $CFGDIR/compton/compton.conf -b
-polybar --config=$CFGDIR/polybar/config example &
+
+for MONITOR in $(polybar --list-monitors | awk -F':' '{print $1}')
+do
+    MONITOR=$MONITOR polybar --config=$CFGDIR/polybar/config example &
+done
