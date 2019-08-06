@@ -16,8 +16,10 @@
         88
     ],
     "files.exclude": {
+        ".mypy_cache/": true,
         ".pytest_cache/": true,
         ".vscode/": true,
+        "*.egg-info/": true,
         "**/__pycache__/": true
     },
     "gitlens.codeLens.enabled": false,
