@@ -16,12 +16,6 @@ do
     bspc config ${side}_monocle_padding -$(bspc config ${side}_padding)
 done
 
-bspc rule -a Gimp desktop='^8' state=floating follow=on
-bspc rule -a Chromium desktop='^2'
-bspc rule -a mplayer2 state=floating
-bspc rule -a Kupfer.py focus=on
-bspc rule -a Screenkey manage=off
-
 # machine-specific monitor/keyboard options
 case $(cat /var/lib/dbus/machine-id) in
     3b5960f4107945baadd780fd5696cf14)  # home
@@ -51,7 +45,7 @@ done
 feh --bg-scale ~/Wallpapers/wallpaper.jpg
 
 CFGDIR=~/.config
-sxhkd &
+sxhkd -c $CFGDIR/sxhkd/sxhkdrc &
 compton --config $CFGDIR/compton/compton.conf -b
 
 for MONITOR in $(polybar --list-monitors | awk -F':' '{print $1}')
