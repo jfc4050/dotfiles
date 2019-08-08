@@ -24,7 +24,7 @@ bspc rule -a Screenkey manage=off
 
 # machine-specific monitor/keyboard options
 case $(cat /var/lib/dbus/machine-id) in
-    65b40d91790249efbc3a35a1ca2a33b3)  # home
+    3b5960f4107945baadd780fd5696cf14)  # home
         xrandr --output DP-4 --mode 3440x1440 --rate 144
         bspc monitor -d 1 2 3 4 5 6 7 8 9
         ;;
