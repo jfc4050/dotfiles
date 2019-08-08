@@ -24,5 +24,7 @@
     },
     "gitlens.codeLens.enabled": false,
     "workbench.editor.enablePreview": false,
-    "editor.fontFamily": "'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback', 'PowerlineSymbols'"
+    "editor.fontFamily": "'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback', 'PowerlineSymbols'",
+    "workbench.iconTheme": "material-icon-theme",
+    "window.menuBarVisibility": "toggle"
 }
