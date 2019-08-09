@@ -6,11 +6,13 @@ export ZSH="$HOME/.oh-my-zsh"
 
 ZSH_THEME=spaceship
 SPACESHIP_VI_MODE_SHOW=false
+ZSH_AUTOSUGGEST_USE_ASYNC=true
 
 COMPLETION_WAITING_DOTS="true"
 
 plugins=(
   git
+  zsh-autosuggestions
 )
 
 source $ZSH/oh-my-zsh.sh
