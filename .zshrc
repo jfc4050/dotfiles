@@ -31,8 +31,8 @@ export KEYTIMEOUT=10
 function zle-line-init zle-keymap-select () {
     # changes cursor based on vim mode
     case ${KEYMAP} in
-        (vicmd)      echo -ne "\e[2 q" ;;
-        (main|viins) echo -ne "\e[6 q" ;;
+        (vicmd)      echo -ne "\e[1 q" ;;
+        (main|viins) echo -ne "\e[5 q" ;;
         (*)          echo -ne "\e[6 q" ;;
     esac
 }
