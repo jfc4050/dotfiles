@@ -11,7 +11,8 @@ bspc config single_monocle       true
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
-for side in top right bottom left
+bspc config top_monocle_padding $(bspc config top_padding)
+for side in right bottom left
 do
     bspc config ${side}_monocle_padding -$(bspc config ${side}_padding)
 done
