@@ -35,5 +35,5 @@
         "*.egg-info/": true,
         "**/__pycache__/": true
     },
-    "files.trimTrailingWhitespace": true
+    "C_Cpp.updateChannel": "Insiders"
 }
