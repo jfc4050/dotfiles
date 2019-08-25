@@ -20,7 +20,7 @@ done
 # machine-specific monitor/keyboard options
 case $(cat /var/lib/dbus/machine-id) in
     3b5960f4107945baadd780fd5696cf14)  # home
-        xrandr --output DP-4 --mode 3440x1440 --rate 144
+        xrandr --output $(xrandr -q | grep -w connected | awk '{print $1}') --mode 3440x1440 --rate 144
         bspc monitor -d 1 2 3 4 5 6 7 8 9
         ;;
     ed0adf4708574812a27a4a6930a9acc6)  # work
