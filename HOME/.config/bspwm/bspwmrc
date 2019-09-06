@@ -32,6 +32,7 @@ case $(cat /var/lib/dbus/machine-id) in
         xrandr --output DP-1-1-1 --left-of DP-1-1-2
         setxkbmap -layout us -option ctrl:nocaps
         setxkbmap -layout us -option altwin:swap_alt_win
+        xinput --disable $(xinput list --id-only "DLL07BE:01 06CB:7A13 Touchpad")
         ;;
     *)
         bspc monitor -d I II III IV V VI VII VIII IX X
