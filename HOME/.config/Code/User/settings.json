@@ -6,6 +6,9 @@
     ],
     "editor.fontFamily": "'Droid Sans Mono', 'monospace', 'Droid Sans Fallback', 'PowerlineSymbols'",
     "editor.glyphMargin": false,
+    "editor.smoothScrolling": false,
+    "editor.cursorBlinking": "blink",
+    "editor.cursorSmoothCaretAnimation": false,
     "vim.insertModeKeyBindings": [
         {
             "before": ["j", "k"],
@@ -27,6 +30,7 @@
         "statusBar.noFolderBackground": "#5f00af",
         "statusBar.debuggingBackground": "#5f00af"
     },
+    "workbench.settings.enableNaturalLanguageSearch": false,
     "window.menuBarVisibility": "toggle",
     "files.exclude": {
         ".mypy_cache/": true,
