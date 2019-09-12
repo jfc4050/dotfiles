@@ -21,15 +21,9 @@
         "<C-w>": false
     },
     "vim.useSystemClipboard": true,
-    "vim.statusBarColorControl": true,
     "gitlens.codeLens.enabled": false,
     "workbench.editor.enablePreview": false,
-    "workbench.iconTheme": "material-icon-theme",
-    "workbench.colorCustomizations": {
-        "statusBar.background": "#5f00af",
-        "statusBar.noFolderBackground": "#5f00af",
-        "statusBar.debuggingBackground": "#5f00af"
-    },
+    "workbench.activityBar.visible": false,
     "workbench.settings.enableNaturalLanguageSearch": false,
     "window.menuBarVisibility": "toggle",
     "files.exclude": {

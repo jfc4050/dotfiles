@@ -31,5 +31,9 @@
     {
         "key": "ctrl+e",
         "command": "workbench.view.explorer"
+    },
+    {
+        "key": "ctrl+g",
+        "command": "workbench.view.scm"
     }
 ]
