@@ -27,11 +27,13 @@
     "workbench.settings.enableNaturalLanguageSearch": false,
     "window.menuBarVisibility": "toggle",
     "files.exclude": {
-        ".mypy_cache/": true,
-        ".pytest_cache/": true,
-        ".vscode/": true,
-        "*.egg-info/": true,
-        "**/__pycache__/": true
+        "**/__pycache__/": true,
+        "**/.mypy_cache/": true,
+        "**/.pytest_cache/": true,
+        "**/.terraform/": true,
+        "**/.vscode/": true,
+        "**/*.egg-info/": true,
+        "**/*.tfstate*": true
     },
     "leetcode.workspaceFolder": "/home/justin/leetcode",
     "leetcode.defaultLanguage": "python3",
