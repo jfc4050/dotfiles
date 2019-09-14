@@ -9,7 +9,7 @@ First install:
 * bspwm
 * sxhkd
 * compton ([tryone144 fork](https://github.com/tryone144/compton))
-* terminator
+* kitty
 * ulauncher
 
 Then, to symlink dotfiles and setup themes/plugins:

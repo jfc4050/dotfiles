@@ -20,6 +20,15 @@ export MANPATH="/usr/local/man:$MANPATH"
 export ARCHFLAGS="-arch x86_64"
 export SSH_KEY_PATH="~/.ssh/rsa_id"
 
+DISABLE_AUTO_TITLE=true
+# function precmd () {
+    # print -Pn "\e]0;${PWD}\a"
+# }
+function precmd () {
+  window_title="\033]0;${PWD##*/}\007"
+  echo -ne "$window_title"
+}
+
 alias vi=vim
 function gas() {
     git add $* && git status
