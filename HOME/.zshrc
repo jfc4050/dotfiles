@@ -25,6 +25,10 @@ function gas() {
     git add $* && git status
 }
 
+function gad() {
+    git add $* && git diff --staged
+}
+
 # vim mode
 bindkey -v
 bindkey -M viins 'jk' vi-cmd-mode
