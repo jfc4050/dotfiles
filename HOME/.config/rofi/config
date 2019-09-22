@@ -1,0 +1,10 @@
+rofi.modi: run,ssh
+
+rofi.theme: android_notification
+rofi.lines: 10
+rofi.width: -50
+rofi.padding: 0
+
+rofi.threads: 0
+rofi.dpi: 0
+rofi.cycle: true
