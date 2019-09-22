@@ -1,5 +1,6 @@
 # dotfiles
 
+## setup
 First install:
 * zsh
 * oh-my-zsh
@@ -23,10 +24,13 @@ chmod +x setup.sh
 
 after that any config updates can be applied simply by doing a `git pull --rebase`.
 
-## Things you may want to modify
+## modify before use
 * `bspwmrc` uses the output of `cat /var/lib/dbus/machine-id` to determine if i am at work or home and picks monitor/keyboard options accordingly. You will need to modify this for your own setup.
 * `[user]` settings in `.gitconfig` should be edited or removed
 
-
-* GTK theme taken from https://github.com/vinceliuice/Mojave-gtk-theme
-* rofi theme starting point taken from https://raw.githubusercontent.com/davatorium/rofi-themes/master/Official%20Themes/android_notification.rasi
+## credit assignment
+* spaceship-prompt from https://github.com/denysdovhan/spaceship-prompt
+* tomorrow-theme from https://github.com/chriskempson/tomorrow-theme
+* zsh-autosuggestions https://github.com/zsh-users/zsh-autosuggestions
+* rofi theme starting point from https://raw.githubusercontent.com/davatorium/rofi-themes/master/Official%20Themes/android_notification.rasi
+* GTK theme starting point from https://github.com/vinceliuice/Mojave-gtk-theme
