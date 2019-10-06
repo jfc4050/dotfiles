@@ -33,11 +33,16 @@
         "**/.pytest_cache/": true,
         "**/.terraform/": true,
         "**/.vscode/": true,
+        "**/*.aux": true,
         "**/*.egg-info/": true,
+        "**/*.fdb_latexmk": true,
+        "**/*.fls": true,
+        "**/*.synctex.gz": true,
         "**/*.tfstate*": true
     },
     "leetcode.workspaceFolder": "/home/justin/leetcode",
     "leetcode.defaultLanguage": "python3",
     "leetcode.showLocked": true,
-    "C_Cpp.updateChannel": "Insiders"
+    "C_Cpp.updateChannel": "Insiders",
+    "latex-workshop.view.pdf.viewer": "tab"
 }
