@@ -38,7 +38,12 @@
         "**/*.fdb_latexmk": true,
         "**/*.fls": true,
         "**/*.synctex.gz": true,
-        "**/*.tfstate*": true
+        "**/*.tfstate*": true,
+        "**/*.class": true,
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
     },
     "leetcode.workspaceFolder": "/home/justin/leetcode",
     "leetcode.defaultLanguage": "python3",
