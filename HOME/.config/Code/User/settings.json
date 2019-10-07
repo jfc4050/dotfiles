@@ -49,5 +49,6 @@
     "leetcode.defaultLanguage": "python3",
     "leetcode.showLocked": true,
     "C_Cpp.updateChannel": "Insiders",
-    "latex-workshop.view.pdf.viewer": "tab"
+    "latex-workshop.view.pdf.viewer": "tab",
+    "workbench.list.automaticKeyboardNavigation": false
 }
