@@ -24,12 +24,14 @@ case $(cat /var/lib/dbus/machine-id) in
         bspc monitor -d 1 2 3 4 5 6 7 8 9
         ;;
     ed0adf4708574812a27a4a6930a9acc6)  # work
-        bspc monitor DP-1-1-1 -d 1 2 3
-        bspc monitor DP-1-1-2 -d 4 5 6
+        bspc monitor DP-1-1-2 -d 1 2 3
+        bspc monitor DP-1-2-1 -d 4 5 6
         bspc monitor eDP-1-1 -d 7 8 9
+
+        xrandr --output DP-1-2-1 --above eDP-1-1
+        xrandr --output DP-1-1-2 --left-of DP-1-2-1
         xrandr --output eDP-1-1 --mode 1920x1080
-        xrandr --output DP-1-1-2 --above eDP-1-1
-        xrandr --output DP-1-1-1 --left-of DP-1-1-2
+
         setxkbmap -layout us -option ctrl:nocaps
         setxkbmap -layout us -option altwin:swap_alt_win
         xinput --disable $(xinput list --id-only "DLL07BE:01 06CB:7A13 Touchpad")
