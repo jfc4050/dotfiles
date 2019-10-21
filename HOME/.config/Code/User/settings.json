@@ -50,5 +50,11 @@
     "leetcode.showLocked": true,
     "C_Cpp.updateChannel": "Insiders",
     "latex-workshop.view.pdf.viewer": "tab",
-    "workbench.list.automaticKeyboardNavigation": false
+    "workbench.list.automaticKeyboardNavigation": false,
+    "[java]": {
+        "editor.tabSize": 2
+    },
+    "[cpp]": {
+        "editor.tabSize": 2
+    }
 }
